@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model FavoriteMovie {
+  id           Int      @id @default(autoincrement())
+  tmdbId       Int      @unique
+  title        String
+  posterPath   String?
+  userId       String
+  voteAverage  Float    @default(0.0)
+}
