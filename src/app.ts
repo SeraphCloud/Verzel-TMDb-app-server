@@ -38,4 +38,4 @@ app.use(express.json());
 // --- Rotas ---
 app.use("/api", routes);
 
-export { app };
+export default app;
