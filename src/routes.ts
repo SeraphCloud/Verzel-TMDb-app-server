@@ -10,5 +10,5 @@ routes.get("/search", search);
 // Rotas de favoritos
 routes.get("/favorites", favoriteController.list);
 routes.post("/favorites", favoriteController.create);
-routes.delete("/favorites/:id", favoriteController.remove);
+routes.delete("/favorites", favoriteController.remove);
 export { routes };
