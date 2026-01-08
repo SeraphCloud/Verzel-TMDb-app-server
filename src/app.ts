@@ -11,7 +11,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 	// Lista de origens permitidas
 	const allowedOrigins = [
 		"http://localhost:5173",
-		"https://verzel-tmdb-app.vercel.app/",
+		"https://verzel-tmdb-app.vercel.app",
 	];
 
 	const origin = req.headers.origin;
